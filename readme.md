@@ -6,7 +6,7 @@
 * but: xml configs of maven are verbose
 * and gradle is slow and a memory hog
 
-### Question: Does polyglot maven reduce verbosity of pom configurations?
+### Question: Does polyglot maven reduce verbosity of pom configurations while retaining current feature state?
 
 ## Results summary (as of 2020-02-09)
 
