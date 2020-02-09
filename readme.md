@@ -30,6 +30,9 @@ org.yaml.snakeyaml.nodes.SequenceNode cannot be cast to org.yaml.snakeyaml.nodes
 * https://www.baeldung.com/maven-polyglot
 * https://intellij-support.jetbrains.com/hc/en-us/community/posts/360003463819-IntelliJ-not-reading-pom-yml-in-maven-polyglot-project
 
+## TODOs
+* try complex plugins
+* check syntax for plugin inheritance scopes
 
 ## License
 [MIT](./license.txt)
