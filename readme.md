@@ -13,8 +13,8 @@
 ### Pro
 * yaml pom is less verbose
 * setup simple: just place a .mvn/ folder with extensions.xml in project root
-* supported by idea out of the box
-* supported by maven 3.5
+* supported by idea without extra plugins
+* supported by maven 3.5 (possibly earlier)
 * build works out of the box as expected with pom.xml
 
 ### Contra
