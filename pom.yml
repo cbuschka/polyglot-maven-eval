@@ -10,16 +10,6 @@ properties: {aProperty: 1.2.3, bProperty: 4.5.6}
 
 build:
   plugins:
-    - artifactId: plexus-component-metadata
-      executions:
-        - goals: [generate-metadata, generate-test-metadata]
-          id: default
-          inherited: true
-          priority: 0
-      extensions: false
-      groupId: org.codehaus.plexus
-      inherited: true
-      version: 1.5.4
     - artifactId: java-compiler-plugin
       version: 3.8.1
       configuration:
