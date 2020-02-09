@@ -1,0 +1,28 @@
+modelVersion: 4.0.0
+#parent: {artifactId: polyglot-maven-eval, groupId: com.github.cbuschka, relativePath: ../pom.xml, version: '4'}
+groupId: com.github.cbuschka
+artifactId: polyglot-maven-eval
+version: 0.0.1-SNAPSHOT
+packaging: jar
+name: 'Evaluation of maven yaml support.'
+
+properties: {aProperty: 1.2.3, bProperty: 4.5.6}
+
+build:
+  plugins:
+    - artifactId: plexus-component-metadata
+      executions:
+        - goals: [generate-metadata, generate-test-metadata]
+          id: default
+          inherited: true
+          priority: 0
+      extensions: false
+      groupId: org.codehaus.plexus
+      inherited: true
+      version: 1.5.4
+
+#modules: [ aModule, bModule ]
+
+dependencyManagement:
+  dependencies:
+    - {artifactId: junit, groupId: junit, optional: false, scope: test, type: jar, version: '4.11'}
