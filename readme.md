@@ -44,6 +44,7 @@ org.yaml.snakeyaml.nodes.SequenceNode cannot be cast to org.yaml.snakeyaml.nodes
 * try more complex plugins
 * convert existing project
 * check syntax for plugin inheritance scopes
+* try mixing pom.xml/pom.yml as parent/child
 
 ## License
 [MIT](./license.txt)
