@@ -1,10 +1,20 @@
 # Evaluation of polyglot maven support
 
+## Motivation
+* we use maven as the standard for java projects
+* maven delivers proven build infrastructure for years
+* but: xml configs of maven are verbose
+* and gradle is slow and a memory hog
+
+### Question: Does polyglot maven reduce verbosity of pom configurations?
+
 ## Results summary (as of 2020-02-09)
 
 ### Pro
-* supported by IDEA
-* supported by Maven 3.5
+* yaml pom is less verbose
+* setup simple: just place a .mvn/ folder with extensions.xml in project root
+* supported by idea out of the box
+* supported by maven 3.5
 * build works out of the box as expected with pom.xml
 
 ### Contra
@@ -24,14 +34,15 @@ org.yaml.snakeyaml.nodes.SequenceNode cannot be cast to org.yaml.snakeyaml.nodes
 ## Setup
 * treat as standard maven project
 * run ```mvn clean install``` on command line
-* or import into idea
+* or import into idea (select pom.yml or folder)
 
 ## Links
 * https://www.baeldung.com/maven-polyglot
 * https://intellij-support.jetbrains.com/hc/en-us/community/posts/360003463819-IntelliJ-not-reading-pom-yml-in-maven-polyglot-project
 
 ## TODOs
-* try complex plugins
+* try more complex plugins
+* convert existing project
 * check syntax for plugin inheritance scopes
 
 ## License
