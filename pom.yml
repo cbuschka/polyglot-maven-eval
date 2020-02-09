@@ -20,8 +20,16 @@ build:
       groupId: org.codehaus.plexus
       inherited: true
       version: 1.5.4
+    - artifactId: java-compiler-plugin
+      version: 3.8.1
+      configuration:
+        source: 1.8
+        target: 1.8
 
 #modules: [ aModule, bModule ]
+
+dependencies:
+  - {artifactId: junit, groupId: junit}
 
 dependencyManagement:
   dependencies:
